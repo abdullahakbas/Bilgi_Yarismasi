@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>C-sharp.ico</ApplicationIcon>
+    <Authors>Abdullah</Authors>
+    <Company>Akbas</Company>
+    <Title>BilgiYarismasi</Title>
+    <PackageId>AbdullahAkbas</PackageId>
+    <Description>Abdullah Akbas</Description>
+    <Copyright>Abdullah Akbas</Copyright>
+    <PackageIcon>C-sharp.png</PackageIcon>
+    <PackageReleaseNotes>1.0</PackageReleaseNotes>
+    <NeutralLanguage>tr-TR</NeutralLanguage>
+    <AssemblyVersion>1.0</AssemblyVersion>
+    <FileVersion>1.0</FileVersion>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="C-sharp.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="D:\Resimlerim\C-sharp.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
